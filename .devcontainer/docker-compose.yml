@@ -4,9 +4,9 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     volumes:
-      - .:/workspace:cached
+      - ..:/workspace:cached
     command: php -S 0.0.0.0:3000 -t /workspace
     working_dir: /workspace
     ports:
