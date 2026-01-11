@@ -1,4 +1,4 @@
-# PHP utvecklingsmiljö
+# Utvecklingsmiljö för PHP/MySQL
 
 En färdig utvecklingsmiljö för PHP med MySQL och phpMyAdmin.
 
