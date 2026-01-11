@@ -34,6 +34,10 @@ När alla har accepterat inbjudan:
 
 **Viktigt:** Varje person har sin egen Codespace – ni jobbar inte i samma fönster, utan synkar via Git!
 
+**Nästa gång du ska jobba:**
+1. Gå till [github.com/codespaces](https://github.com/codespaces)
+2. Klicka på din befintliga Codespace (skapa inte en ny varje gång!)
+
 ---
 
 ## Versionshantering med Git
@@ -113,10 +117,10 @@ En branch är en "kopia" där du kan jobba utan att påverka andras kod.
 
 **Bra branch-namn:**
 ```
-login-page
-product-list
-fix-database-error
-update-startpage
+contact
+products
+database-connection
+startpage
 ```
 
 **Viktigt:** Jobba aldrig direkt i `main` – skapa alltid en egen branch!
@@ -141,6 +145,11 @@ En Pull Request (PR) låter gruppen granska din kod innan den läggs in i main.
 7. Be en gruppmedlem granska och klicka **Merge pull request**
 
 **Tips:** Skriv vad ni ska titta på, t.ex. "Kolla att formuläret validerar korrekt"
+
+**Efter din PR är mergad:**
+1. Byt tillbaka till `main` (klicka på branch-namnet längst ner)
+2. Pull för att hämta dina mergade ändringar
+3. Ta bort din gamla branch (valfritt): **⋯** → **Branch** → **Delete Branch**
 
 ---
 
@@ -235,12 +244,31 @@ så förstår man vad den gör.
 En konflikt uppstår när två personer ändrat samma rad. Git vet inte vilken version som ska gälla.
 
 **Så ser en konflikt ut:**
+
+Lisa och Erik har båda ändrat navbaren i `header.php`:
 ```php
 <<<<<<< HEAD
-$title = "Min sida";
+// Eriks version
+<nav>
+    <a href="index.php">Hem</a>
+    <a href="products.php">Produkter</a>
+</nav>
 =======
-$title = "Startsidan";
->>>>>>> login-sida
+// Lisas version
+<nav>
+    <a href="index.php">Startsida</a>
+    <a href="contact.php">Kontakt</a>
+</nav>
+>>>>>>> login-page
+```
+
+**Lösning:** Prata med varandra och kombinera:
+```php
+<nav>
+    <a href="index.php">Hem</a>
+    <a href="products.php">Produkter</a>
+    <a href="contact.php">Kontakt</a>
+</nav>
 ```
 
 **Så löser du den:**
@@ -310,3 +338,6 @@ Lägg aldrig lösenord eller API-nycklar i Git!
 |---------|---------|
 | Merge-konflikt | Se avsnittet "Merge-konflikter" ovan |
 | Kan inte pusha | Pull först, lösa eventuella konflikter, sedan push |
+| Committade till main av misstag | **⋯** → **Commit** → **Undo Last Commit**, skapa branch, committa igen |
+| Ser inte andras ändringar | Pull från main |
+| Fel branch | Klicka på branch-namnet längst ner och byt |
