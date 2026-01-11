@@ -47,10 +47,10 @@ Din kod försvinner inte – nästa gång fortsätter du där du slutade!
 
 ## Kom igång
 
-1. Klicka på **"Use this template"** → **"Open in a codespace"**
-2. Vänta medan miljön byggs (ca 1-2 minuter första gången)
-3. Klicka på **PORTS**-fliken längst ner
-4. Klicka på länken vid port **3000** för att öppna din webbsida
+1. Klicka på **"Use this template"** → **"Open in a codespace"**.
+2. Vänta medan miljön byggs (ca 1-2 minuter första gången).
+3. Klicka på **PORTS**-fliken i mitten på terminalfönstret. Visa terminal via menyn Terminal → New Terminal.
+4. Klicka på länken vid port **3000** för att öppna din webbsida.
 
 ## Tjänster
 
