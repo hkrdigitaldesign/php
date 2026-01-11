@@ -1,5 +1,3 @@
----
-
 ## Starta ett grupprojekt
 
 ### Steg 1: En person skapar repot
