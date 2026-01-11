@@ -86,6 +86,8 @@ Använd dessa uppgifter för att ansluta till databasen:
 
 ## Problem?
 
-- **Sidan laddas inte?** → Kolla att du öppnar rätt port (3000)
-- **Databasfel?** → Kontrollera att MySQL hunnit starta (vänta 30 sek)
-- **Ändringarna syns inte?** → Ladda om sidan (Cmd+R / Ctrl+R)
+| Problem | Lösning |
+|---------|---------|
+| Sidan laddas inte | Kolla att du öppnar rätt port (3000) |
+| Databasfel | Kontrollera att MySQL hunnit starta (vänta 30 sek) |
+| Ändringarna syns inte | Ladda om sidan (Cmd+R / Ctrl+R) |
