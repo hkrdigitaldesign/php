@@ -2,6 +2,43 @@
 
 En färdig utvecklingsmiljö för PHP med MySQL och phpMyAdmin.
 
+---
+
+## 🎓 Innan du börjar: GitHub Student Developer Pack
+
+För att använda Codespaces gratis behöver du registrera dig för GitHub Student Developer Pack med din universitetsmail.
+
+1. Gå till **[education.github.com/pack](https://education.github.com/pack)**
+2. Klicka på **"Sign up for Student Developer Pack"**
+3. Verifiera med din **@stud.hkr.se**-adress
+
+**OBS:** Det kan ta upp till **72 timmar** innan förmånerna aktiveras.
+
+### Vad ingår?
+| Förmån | Beskrivning |
+|--------|-------------|
+| **GitHub Pro** | Obegränsade privata repos |
+| **Copilot Pro** | AI-kodassistent gratis |
+| **Codespaces** | 180 timmar/månad för molnkodning |
+
+---
+
+## Kontrollera dina Codespaces-timmar
+
+Så här ser du hur många timmar du har kvar:
+
+1. Gå till **github.com** → Klicka på din profilbild → **Settings**
+2. **Billing and licensing** → **Overview**
+3. Under **Metered usage**, klicka på **Codespaces**
+4. Klicka på **View details** till höger
+
+### Automatisk timeout
+En Codespace stängs automatiskt av efter **30 minuters inaktivitet**. Din kod sparas, men du slutar förbruka timmar.
+
+**Tips:** Stäng alltid din Codespace när du är klar för att spara timmar!
+
+---
+
 ## Kom igång
 
 1. Klicka på **"Use this template"** → **"Open in a codespace"**
