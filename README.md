@@ -70,7 +70,7 @@ Använd dessa uppgifter för att ansluta till databasen:
 | Användare | `root` |
 | Lösenord | `root` |
 
-## 📁 Filstruktur
+## Filstruktur
 ```
 /
 ├── index.php          ← Startsida (redigera denna)
