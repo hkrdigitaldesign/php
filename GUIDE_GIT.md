@@ -134,16 +134,16 @@ Tänk dig att du packar en väska för en resa:
 ### Sammanfattning
 
 ```
-  Ändrade filer       Förberedda         Sparade lokalt    Delat med gruppen
-       │                  │                   │                    │
-       ▼                  ▼                   ▼                    ▼
-┌─────────────┐    ┌─────────────┐     ┌─────────────┐      ┌─────────────┐
-│ Din branch  │    │   Stagade   │     │    Lokalt   │      │    GitHub   │
-│ (ändringar) │───►│  ändringar  │────►│     repo    │◄────►│   (Remote)  │
-└─────────────┘    └─────────────┘     └─────────────┘      └─────────────┘
-             Klicka +           ✓ Commit               Sync
-                            (eller ✨ för AI-      (Push + Pull)
-                          genererat meddelande)
+Ändrade filer       Förberedda        Sparade lokalt    Delat med gruppen
+      │                 │                  │                   │
+      ▼                 ▼                  ▼                   ▼
+┌────────────┐    ┌────────────┐     ┌────────────┐     ┌────────────┐
+│ Din branch │    │  Stagade   │     │   Lokalt   │     │   GitHub   │
+│(ändringar) │───►│ ändringar  │────►│    repo    │◄───►│  (Remote)  │
+└────────────┘    └────────────┘     └────────────┘     └────────────┘
+            Klicka +          ✓ Commit              Sync
+                          (eller ✨ för AI-     (Push + Pull)
+                        genererat meddelande)
 ```
 
 ### Ångra ändringar
@@ -350,22 +350,22 @@ så förstår man vad den gör.
 DU (författare)                              GRANSKARE
 ───────────────                              ─────────
 ┌─────────────────┐
-│ 1. Jobba i din  │
-│    branch       │
+│  1. Jobba i din │
+│      branch     │
 └────────┬────────┘
          ▼
 ┌─────────────────┐
-│ 2. Push till    │
-│    GitHub       │
+│  2. Push till   │
+│      GitHub     │
 └────────┬────────┘
          ▼
 ┌─────────────────┐                      ┌─────────────────┐
-│ 3. Skapa Pull   │─────────────────────►│ 4. Granska kod  │
-│    Request      │                      └────────┬────────┘
+│  3. Skapa Pull  │─────────────────────►│ 4. Granska kod  │
+│     Request     │                      └────────┬────────┘
 └─────────────────┘                               │
                                                   ▼
                                   ┌─────────────────────────────────┐
-                                  │           5. BESLUT             │
+                                  │            5. BESLUT            │
                                   ├───────────┬───────────┬─────────┤
                                   │  Approve  │  Comment  │ Request │
                                   │ → Merge!  │→ Diskutera│ changes │
