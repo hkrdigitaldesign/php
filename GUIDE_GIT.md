@@ -79,15 +79,6 @@ Tänk dig att du packar en väska för en resa:
               git add            git commit            git push
 ```
 
-| VS Code (GUI) | Terminal (kommando) | Vad det gör |
-|---------------|---------------------|-------------|
-| Klicka **+** på en fil | `git add filnamn.php` | Markerar en fil som redo att sparas |
-| Klicka **+** på "Changes" (alla filer) | `git add .` | Markerar alla ändrade filer som redo att sparas |
-| Klicka **−** (ta bort från staged) | `git restore --staged filnamn.php` | Ångrar staging – filen är fortfarande ändrad men inte markerad |
-| Klicka **✓ Commit** | `git commit -m "meddelande"` | Sparar en ögonblicksbild av alla stagade filer lokalt |
-| **⋯** → **Push** | `git push` | Skickar dina commits till GitHub så andra kan se dem |
-| **⋯** → **Pull** | `git pull` | Hämtar andras ändringar från GitHub till din dator |
-
 ### Ångra ändringar
 
 | Situation | Lösning |
@@ -122,6 +113,21 @@ När flera personer arbetar i samma projekt behöver ni synkronisera era ändrin
 2. **När du är klar** – committa först, sedan **⋯** → **Push**
 
 **Gyllene regeln:** Pull innan du börjar, push när du är klar!
+
+```
+        ┌──────────────────────────────────────────┐
+        │              GitHub (Remote)             │
+        │         main branch på servern           │
+        └──────────────────────────────────────────┘
+                    ▲                    │
+                    │ PUSH               │ PULL
+                    │ (skicka)           │ (hämta)
+                    │                    ▼
+        ┌──────────────────────────────────────────┐
+        │           Din lokala Codespace           │
+        │          din kopia av projektet          │
+        └──────────────────────────────────────────┘
+```
 
 ---
 
