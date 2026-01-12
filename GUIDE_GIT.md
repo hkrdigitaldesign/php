@@ -33,34 +33,35 @@
 └─────────────────────────────────────────────────────────────────────────────┘
 
                             ┌──────────────────┐
-                            │   Lisas GitHub   │
-                            │    main branch   │◄──────────────────────────────┐
-                            │ (gruppens repo)  │                               │
-                            └────────┬─────────┘                               │
-                                     │                                         │
-        ┌────────────────────────────┼────────────────────────────┐            │
-        │ pull                       │ pull                       │ pull       │
-        ▼                            ▼                            ▼            │
-  ┌────────────────┐          ┌────────────────┐          ┌────────────────┐   │
-  │      Lisa      │          │      Erik      │          │      Anna      │   │
-  │   Codespace    │          │   Codespace    │          │   Codespace    │   │
-  │    (ägare)     │          │ (collaborator) │          │ (collaborator) │   │
-  └───────┬────────┘          └───────┬────────┘          └───────┬────────┘   │
-          │                           │                           │            │
-          ▼                           ▼                           ▼            │
-      branch:                     branch:                     branch:          │
-      contact                     products                    login            │
-          │                           │                           │            │
-          └───────────────────────────┼───────────────────────────┘            │
-                                      │ push + PR                              │
-                                      ▼                                        │
-                            ┌──────────────────┐                               │
-                            │   Pull Request   │                               │
-                            │   + Granskning   │                               │
-                            └────────┬─────────┘                               │
-                                     │                                         │
-                                     │ Merge                                   │
-                                     └─────────────────────────────────────────┘
+                        1.  │   Lisas GitHub   │
+                            │   main branch    │◄────────────────────────────┐
+                            │ (gruppens repo)  │                             │
+                            └────────┬─────────┘                             │
+                                     │                                       │
+        ┌────────────────────────────┼────────────────────────────┐          │
+        │ 2. pull                    │ 2. pull                    │ 2. pull  │
+        ▼                            ▼                            ▼          │
+  ┌────────────────┐          ┌────────────────┐          ┌────────────────┐ │
+  │      Lisa      │          │      Erik      │          │      Anna      │ │
+  │    Codespace   │          │    Codespace   │          │    Codespace   │ │
+  │    (ägare)     │          │ (collaborator) │          │ (collaborator) │ │
+  └───────┬────────┘          └───────┬────────┘          └───────┬────────┘ │
+          │                           │                           │          │
+          ▼                           ▼                           ▼          │
+      3. branch:                  3. branch:                  3. branch:     │
+         contact                     products                    login       │
+          │                           │                           │          │
+          └───────────────────────────┼───────────────────────────┘          │
+                                      │                                      │
+                                      │ 4. push + PR                         │
+                                      ▼                                      │
+                            ┌──────────────────┐                             │
+                        5.  │   Pull Request   │                             │
+                            │   + Granskning   │                             │
+                            └────────┬─────────┘                             │
+                                     │                                       │
+                                     │ 6. Merge                              │
+                                     └───────────────────────────────────────┘
 ```
 
 ## Starta ett grupprojekt
@@ -141,7 +142,7 @@ Tänk dig att du packar en väska för en resa:
 │ Din branch │    │  Stagade   │     │   Lokalt   │     │   GitHub   │
 │(ändringar) │───►│ ändringar  │────►│    repo    │◄───►│  (Remote)  │
 └────────────┘    └────────────┘     └────────────┘     └────────────┘
-            Klicka +          ✓ Commit              Sync
+           1. Klicka +       2. ✓ Commit           3. Sync
                           (eller ✨ för AI-     (Push + Pull)
                         genererat meddelande)
 ```
@@ -186,10 +187,10 @@ När flera personer arbetar i samma projekt behöver ni synkronisera era ändrin
 │              GitHub (Remote)             │
 │         main branch på servern           │
 └──────────────────────────────────────────┘
-        ▲                    │
-        │ PUSH               │ PULL
-        │ (skicka)           │ (hämta)
-        │                    ▼
+        │                    ▲
+        │ 1. PULL            │ 2. PUSH
+        │ (hämta)            │ (skicka)
+        ▼                    │
 ┌──────────────────────────────────────────┐
 │           Din lokala Codespace           │
 │          din kopia av projektet          │
@@ -225,11 +226,11 @@ startpage
 ```
 main         ●───────●───────────────────────●───────●
                      │                       ▲
-                     │ Skapa branch          │ Merge (via PR, se nedan)
+                     │ 1. Skapa branch       │ 4. Merge (via PR)
                      ▼                       │
 contact              ●─────●─────●───────────┘
                            │     │
-                        commit  commit
+                     2. commit  3. commit
 ```
 
 ---
