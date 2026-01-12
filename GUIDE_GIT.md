@@ -69,14 +69,16 @@ Tänk dig att du packar en väska för en resa:
 ### Sammanfattning
 
 ```
- Ändrade filer        Förberedda         Sparade lokalt       Delat med gruppen
-       │                   │                   │                      │
-       ▼                   ▼                   ▼                      ▼
-┌─────────────┐     ┌─────────────┐      ┌─────────────┐       ┌─────────────┐
-│   Working   │     │   Staging   │      │    Local    │       │   GitHub    │
-│  Directory  │────►│    Area     │─────►│    Repo     │──────►│  (Remote)   │
-└─────────────┘     └─────────────┘      └─────────────┘       └─────────────┘
-              git add            git commit            git push
+  Ändrade filer       Förberedda         Sparade lokalt    Delat med gruppen
+       │                  │                   │                    │
+       ▼                  ▼                   ▼                    ▼
+┌─────────────┐    ┌─────────────┐     ┌─────────────┐      ┌─────────────┐
+│ Din branch  │    │   Stagade   │     │    Lokalt   │      │    GitHub   │
+│ (ändringar) │───►│  ändringar  │────►│     repo    │◄────►│   (Remote)  │
+└─────────────┘    └─────────────┘     └─────────────┘      └─────────────┘
+             Klicka +           ✓ Commit          Sync (Push + Pull)
+                            (eller ✨ för AI-
+                          genererat meddelande)
 ```
 
 ### Ångra ändringar
