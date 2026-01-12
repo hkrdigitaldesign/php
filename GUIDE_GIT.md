@@ -347,8 +347,8 @@ så förstår man vad den gör.
 **Pull Request-processen**
 
 ```
-DU (författare)                                 GRANSKARE
-───────────────                                 ─────────
+DU (författare)                              GRANSKARE
+───────────────                              ─────────
 ┌─────────────────┐
 │ 1. Jobba i din  │
 │    branch       │
