@@ -53,17 +53,6 @@ Tänk dig att du packar en väska för en resa:
 | 1. Välja kläder | **Stage** | Du väljer vilka filer som ska ingå i nästa sparning |
 | 2. Stänga väskan | **Commit** | Du sparar en "ögonblicksbild" med ett meddelande |
 
-```
- Ändrade filer        Förberedda         Sparade lokalt       Delat med gruppen
-       │                   │                   │                      │
-       ▼                   ▼                   ▼                      ▼
-┌─────────────┐     ┌─────────────┐      ┌─────────────┐       ┌─────────────┐
-│   Working   │     │   Staging   │      │    Local    │       │   GitHub    │
-│  Directory  │────►│    Area     │─────►│    Repo     │──────►│  (Remote)   │
-└─────────────┘     └─────────────┘      └─────────────┘       └─────────────┘
-              git add            git commit            git push
-```
-
 **Varför finns stage?** Du kanske har ändrat 5 filer men vill bara spara 2 av dem nu. Med stage väljer du exakt vilka ändringar som hör ihop logiskt – t.ex. "alla ändringar för inloggningssidan" i en commit och "buggfix i kontaktformuläret" i en annan.
 
 ### Spara ändringar (commit)
@@ -76,6 +65,28 @@ Tänk dig att du packar en väska för en resa:
 6. Klicka på **✓ Commit**
 
 **Tips:** Committa ofta med tydliga meddelanden – det gör det lättare att hitta tillbaka!
+
+### Sammanfattning
+
+```
+ Ändrade filer        Förberedda         Sparade lokalt       Delat med gruppen
+       │                   │                   │                      │
+       ▼                   ▼                   ▼                      ▼
+┌─────────────┐     ┌─────────────┐      ┌─────────────┐       ┌─────────────┐
+│   Working   │     │   Staging   │      │    Local    │       │   GitHub    │
+│  Directory  │────►│    Area     │─────►│    Repo     │──────►│  (Remote)   │
+└─────────────┘     └─────────────┘      └─────────────┘       └─────────────┘
+              git add            git commit            git push
+```
+
+| VS Code (GUI) | Terminal (kommando) | Vad det gör |
+|---------------|---------------------|-------------|
+| Klicka **+** på en fil | `git add filnamn.php` | Markerar en fil som redo att sparas |
+| Klicka **+** på "Changes" (alla filer) | `git add .` | Markerar alla ändrade filer som redo att sparas |
+| Klicka **−** (ta bort från staged) | `git restore --staged filnamn.php` | Ångrar staging – filen är fortfarande ändrad men inte markerad |
+| Klicka **✓ Commit** | `git commit -m "meddelande"` | Sparar en ögonblicksbild av alla stagade filer lokalt |
+| **⋯** → **Push** | `git push` | Skickar dina commits till GitHub så andra kan se dem |
+| **⋯** → **Pull** | `git pull` | Hämtar andras ändringar från GitHub till din dator |
 
 ### Ångra ändringar
 
