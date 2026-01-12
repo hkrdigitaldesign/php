@@ -61,7 +61,7 @@ Tänk dig att du packar en väska för en resa:
 │   Working   │     │   Staging   │      │    Local    │       │   GitHub    │
 │  Directory  │────►│    Area     │─────►│    Repo     │──────►│  (Remote)   │
 └─────────────┘     └─────────────┘      └─────────────┘       └─────────────┘
-    git add            git commit           git push
+              git add            git commit            git push
 ```
 
 **Varför finns stage?** Du kanske har ändrat 5 filer men vill bara spara 2 av dem nu. Med stage väljer du exakt vilka ändringar som hör ihop logiskt – t.ex. "alla ändringar för inloggningssidan" i en commit och "buggfix i kontaktformuläret" i en annan.
