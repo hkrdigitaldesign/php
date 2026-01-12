@@ -1,3 +1,68 @@
+# Git-guide för grupparbete
+
+## Innehåll
+
+- [Starta ett grupprojekt](#starta-ett-grupprojekt)
+- [Versionshantering med Git](#versionshantering-med-git)
+  - [Stage vs Commit](#stage-vs-commit--vad-är-skillnaden)
+  - [Spara ändringar](#spara-ändringar-commit)
+  - [Ångra ändringar](#ångra-ändringar)
+- [Grupparbete med Git](#grupparbete-med-git)
+  - [Push och Pull](#push-och-pull--synka-med-github)
+  - [Branches](#branches--jobba-utan-att-störa-varandra)
+  - [Pull Requests](#pull-requests-pr--granska-innan-ni-slår-ihop)
+  - [Granska en Pull Request](#granska-en-pull-request)
+  - [Merge-konflikter](#merge-konflikter--när-två-ändrar-samma-fil)
+- [Checklista för grupparbete](#checklista-för-grupparbete)
+- [Problem?](#problem)
+
+---
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        GIT GRUPPARBETE – ÖVERSIKT                           │
+│                                                                             │
+│  1. EN person skapar repot och bjuder in de andra som collaborators         │
+│  2. Alla gör PULL från main för att hämta senaste versionen                 │
+│  3. Varje person skapar en egen BRANCH för sin uppgift                      │
+│  4. När du är klar: PUSH + skapa PULL REQUEST                               │
+│  5. En gruppmedlem GRANSKAR din kod                                         │
+│  6. Efter godkännande: MERGE till main                                      │
+│                                                                             │
+│  Gyllene regeln: Jobba aldrig direkt i main – skapa alltid en branch!       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                            ┌──────────────────┐
+                            │   Lisas GitHub   │
+                            │    main branch   │◄──────────────────────────────┐
+                            │ (gruppens repo)  │                               │
+                            └────────┬─────────┘                               │
+                                     │                                         │
+        ┌────────────────────────────┼────────────────────────────┐            │
+        │ pull                       │ pull                       │ pull       │
+        ▼                            ▼                            ▼            │
+  ┌────────────────┐          ┌────────────────┐          ┌────────────────┐   │
+  │      Lisa      │          │      Erik      │          │      Anna      │   │
+  │   Codespace    │          │   Codespace    │          │   Codespace    │   │
+  │    (ägare)     │          │ (collaborator) │          │ (collaborator) │   │
+  └───────┬────────┘          └───────┬────────┘          └───────┬────────┘   │
+          │                           │                           │            │
+          ▼                           ▼                           ▼            │
+      branch:                     branch:                     branch:          │
+      contact                     products                    login            │
+          │                           │                           │            │
+          └───────────────────────────┼───────────────────────────┘            │
+                                      │ push + PR                              │
+                                      ▼                                        │
+                            ┌──────────────────┐                               │
+                            │   Pull Request   │                               │
+                            │   + Granskning   │                               │
+                            └────────┬─────────┘                               │
+                                     │                                         │
+                                     │ Merge                                   │
+                                     └─────────────────────────────────────────┘
+```
+
 ## Starta ett grupprojekt
 
 ### Steg 1: En person skapar repot
@@ -76,8 +141,8 @@ Tänk dig att du packar en väska för en resa:
 │ Din branch  │    │   Stagade   │     │    Lokalt   │      │    GitHub   │
 │ (ändringar) │───►│  ändringar  │────►│     repo    │◄────►│   (Remote)  │
 └─────────────┘    └─────────────┘     └─────────────┘      └─────────────┘
-             Klicka +           ✓ Commit          Sync (Push + Pull)
-                            (eller ✨ för AI-
+             Klicka +           ✓ Commit               Sync
+                            (eller ✨ för AI-      (Push + Pull)
                           genererat meddelande)
 ```
 
@@ -117,18 +182,18 @@ När flera personer arbetar i samma projekt behöver ni synkronisera era ändrin
 **Gyllene regeln:** Pull innan du börjar, push när du är klar!
 
 ```
-        ┌──────────────────────────────────────────┐
-        │              GitHub (Remote)             │
-        │         main branch på servern           │
-        └──────────────────────────────────────────┘
-                    ▲                    │
-                    │ PUSH               │ PULL
-                    │ (skicka)           │ (hämta)
-                    │                    ▼
-        ┌──────────────────────────────────────────┐
-        │           Din lokala Codespace           │
-        │          din kopia av projektet          │
-        └──────────────────────────────────────────┘
+┌──────────────────────────────────────────┐
+│              GitHub (Remote)             │
+│         main branch på servern           │
+└──────────────────────────────────────────┘
+        ▲                    │
+        │ PUSH               │ PULL
+        │ (skicka)           │ (hämta)
+        │                    ▼
+┌──────────────────────────────────────────┐
+│           Din lokala Codespace           │
+│          din kopia av projektet          │
+└──────────────────────────────────────────┘
 ```
 
 ---
@@ -155,9 +220,21 @@ startpage
 
 **Viktigt:** Jobba aldrig direkt i `main` – skapa alltid en egen branch!
 
+**Branch-arbetsflöde**
+
+```
+main         ●───────●───────────────────────●───────●
+                     │                       ▲
+                     │ Skapa branch          │ Merge (via PR, se nedan)
+                     ▼                       │
+contact              ●─────●─────●───────────┘
+                           │     │
+                        commit  commit
+```
+
 ---
 
-### Pull Requests – granska innan ni slår ihop
+### Pull Requests (PR) – granska innan ni slår ihop
 
 En Pull Request (PR) låter gruppen granska din kod innan den läggs in i main.
 
@@ -266,6 +343,35 @@ så förstår man vad den gör.
 - Ta inte kritik personligt – det handlar om koden
 - Fråga om du inte förstår kommentaren
 - Tacka för feedbacken!
+
+**Pull Request-processen**
+
+```
+DU (författare)                                 GRANSKARE
+───────────────                                 ─────────
+┌─────────────────┐
+│ 1. Jobba i din  │
+│    branch       │
+└────────┬────────┘
+         ▼
+┌─────────────────┐
+│ 2. Push till    │
+│    GitHub       │
+└────────┬────────┘
+         ▼
+┌─────────────────┐                      ┌─────────────────┐
+│ 3. Skapa Pull   │─────────────────────►│ 4. Granska kod  │
+│    Request      │                      └────────┬────────┘
+└─────────────────┘                               │
+                                                  ▼
+                                  ┌─────────────────────────────────┐
+                                  │           5. BESLUT             │
+                                  ├───────────┬───────────┬─────────┤
+                                  │  Approve  │  Comment  │ Request │
+                                  │ → Merge!  │→ Diskutera│ changes │
+                                  │           │           │ → Fixa  │
+                                  └───────────┴───────────┴─────────┘
+```
 
 ---
 
