@@ -54,14 +54,14 @@ Tänk dig att du packar en väska för en resa:
 | 2. Stänga väskan | **Commit** | Du sparar en "ögonblicksbild" med ett meddelande |
 
 ```
-Ändrade filer        Förberedda           Sparade lokalt       Delat med gruppen
-       │                   │                     │                      │
-       ▼                   ▼                     ▼                      ▼
+ Ändrade filer        Förberedda         Sparade lokalt       Delat med gruppen
+       │                   │                   │                      │
+       ▼                   ▼                   ▼                      ▼
 ┌─────────────┐     ┌─────────────┐      ┌─────────────┐       ┌─────────────┐
 │   Working   │     │   Staging   │      │    Local    │       │   GitHub    │
 │  Directory  │────►│    Area     │─────►│    Repo     │──────►│  (Remote)   │
 └─────────────┘     └─────────────┘      └─────────────┘       └─────────────┘
-                git add           git commit            git push
+    git add            git commit           git push
 ```
 
 **Varför finns stage?** Du kanske har ändrat 5 filer men vill bara spara 2 av dem nu. Med stage väljer du exakt vilka ändringar som hör ihop logiskt – t.ex. "alla ändringar för inloggningssidan" i en commit och "buggfix i kontaktformuläret" i en annan.
