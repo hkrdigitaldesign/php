@@ -23,9 +23,9 @@ För att använda Codespaces gratis behöver du registrera dig för GitHub Stude
 13. Använd **webbkamera eller mobilen** för att ta bild på registreringsintyget → Tryck på knappen **Capture**
 14. Välj alternativet **All coursework is via distance learning** om du läser på distans
 15. **IGEN** Använd **webbkamera eller mobilen** för att ta bild på registreringsintyget → Tryck på knappen **Capture**
-16. Du ska nu ha fått beskedet **Your application has been submitted.**
+16. Du ska nu ha fått beskedet **Your application has been submitted**
 
-**OBS:** Det kan ta upp till **72 timmar** innan förmånerna aktiveras.
+**OBS:** Det kan ta upp till **24 timmar** innan förmånerna aktiveras.
 
 ## Om du får beskedet Denied
 
