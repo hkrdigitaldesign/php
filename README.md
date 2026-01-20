@@ -39,7 +39,7 @@ En Codespace stängs automatiskt efter **30 minuters inaktivitet**. Din kod spar
 | Metod | Instruktion |
 |-------|-------------|
 | **Kortkommando** | `Cmd+Shift+P` (Mac) / `Ctrl+Shift+P` (Win) → Skriv "stop" → **Stop Current Codespace** |
-| **Från GitHub** | [github.com/codespaces](https://github.com/codespaces) → **⋯** → **Stop codespace** |
+| **Från GitHub** | [github.com/codespaces](https://github.com/codespaces) → Klicka på knappen **<> Code** → Välj fliken **Codespaces** → Klicka på **⋯** → **Stop codespace** |
 
 Din kod försvinner inte – nästa gång fortsätter du där du slutade!
 
