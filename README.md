@@ -18,7 +18,7 @@ För att använda Codespaces gratis behöver du registrera dig för GitHub Stude
 8. Klicka på knappen **Share Location**
 9. Klicka på knappen **Continue**
 10. Välj alternativet **3. Dated enrollment letter on school letterhead** under knappen **Select...**
-11. Gå till **LADOK** [https://student.ladok.se/](https://student.ladok.se/)
+11. Gå till **LADOK** (via [https://student.ladok.se/](https://student.ladok.se/))
 12. Gå till **Intyg** → **Skapa intyg** → **Registreringsintyg** → Välj **period** och ange språk till **Engelska**
 13. Använd **webbkamera eller mobilen** för att ta bild på registreringsintyget → Tryck på knappen **Capture**
 14. Välj alternativet **All coursework is via distance learning** om du läser på distans
