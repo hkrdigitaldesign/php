@@ -10,9 +10,28 @@ För att använda Codespaces gratis behöver du registrera dig för GitHub Stude
 
 1. Gå till **[education.github.com/pack](https://education.github.com/pack)**
 2. Klicka på **"Sign up for Student Developer Pack"**
-3. Verifiera med din **@stud.hkr.se**-adress
+3. Skapa ett **GitHub konto**
+4. Verifiera med din **@stud.hkr.se**-adress
+5. Efter inloggning klicka på knappen **"Start an application"** (via [https://github.com/settings/education/benefits](https://github.com/settings/education/benefits))
+6. Välj **Student**
+7. Välj **lärosäte**, exempelvis Högskolan Kristianstad
+8. Klicka på knappen **Share Location**
+9. Klicka på knappen **Continue**
+10. Välj alternativet **3. Dated enrollment letter on school letterhead** under knappen **Select...**
+11. Gå till **LADOK** [https://student.ladok.se/](https://student.ladok.se/)
+12. Gå till **Intyg** → **Skapa intyg** → **Registreringsintyg** → Välj **period** och ange språk till **Engelska**
+13. Använd **webbkamera eller mobilen** för att ta bild på registreringsintyget → Tryck på knappen **Capture**
+14. Välj alternativet **All coursework is via distance learning** om du läser på distans
+15. **IGEN** Använd **webbkamera eller mobilen** för att ta bild på registreringsintyget → Tryck på knappen **Capture**
+16. Du ska nu ha fått beskedet **Your application has been submitted.**
 
 **OBS:** Det kan ta upp till **72 timmar** innan förmånerna aktiveras.
+
+## Om du får beskedet Denied
+
+1. Kontrollera att du har aktiverat **two-factor authentication** under [https://github.com/settings/security](https://github.com/settings/security)
+2. Uppdatera din **Billing information** under [https://github.com/settings/billing/payment_information](https://github.com/settings/billing/payment_information)
+3. Uppdatera din **Profile** → Klicka på **ikonen längst upp till höger** → Välj Profile → Klicka på knappen **Edit profile** → Uppdatera ditt **fullständiga namn** → Logga ut och in igen → Ansök på nytt via [https://github.com/settings/education/benefits](https://github.com/settings/education/benefits)
 
 ### Vad ingår?
 | Förmån | Beskrivning |
