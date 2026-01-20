@@ -29,9 +29,9 @@ För att använda Codespaces gratis behöver du registrera dig för GitHub Stude
 
 ## Om du får beskedet Denied
 
-1. Kontrollera att du har aktiverat **two-factor authentication** under [GitHub Security](https://github.com/settings/security)
-2. Uppdatera din **Billing information** under [GitHub Billing Information](https://github.com/settings/billing/payment_information)
-3. Uppdatera din **Profile** → Klicka på **ikonen längst upp till höger** → Välj Profile → Klicka på knappen **Edit profile** → Uppdatera ditt **fullständiga namn** → Logga ut och in igen → Ansök på nytt via [GitHub Education Benefits](https://github.com/settings/education/benefits)
+1. Kontrollera att du har aktiverat **two-factor authentication** under [GitHub Security](https://github.com/settings/security).
+2. Uppdatera din **Billing information** under [GitHub Billing Information](https://github.com/settings/billing/payment_information). Ange fullständigt namn, måste matcha LADOK intyget.
+3. Uppdatera din **Profile** → Klicka på **ikonen längst upp till höger** → Välj Profile → Klicka på knappen **Edit profile** → Uppdatera ditt **fullständiga namn** → Logga ut och in igen → Ansök på nytt via [GitHub Education Benefits](https://github.com/settings/education/benefits).
 4. Upprepa steg 5-16 enligt ovan. **OBS! Ibland funkar det snabbare om man zoomar in på tre detaljer:**
    a) Ditt fullständiga namn
    b) Namn på högskolan/universitetet
