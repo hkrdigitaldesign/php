@@ -12,7 +12,7 @@ För att använda Codespaces gratis behöver du registrera dig för GitHub Stude
 2. Klicka på **"Sign up for Student Developer Pack"**
 3. Skapa ett **GitHub konto**
 4. Verifiera med din **@stud.hkr.se**-adress
-5. Efter inloggning klicka på knappen **"Start an application"** (via [https://github.com/settings/education/benefits](https://github.com/settings/education/benefits))
+5. Efter inloggning klicka på knappen **"Start an application"** (via [GitHub Education Benefits](https://github.com/settings/education/benefits))
 6. Välj **Student**
 7. Välj **lärosäte**, exempelvis Högskolan Kristianstad
 8. Klicka på knappen **Share Location**
@@ -29,13 +29,14 @@ För att använda Codespaces gratis behöver du registrera dig för GitHub Stude
 
 ## Om du får beskedet Denied
 
-1. Kontrollera att du har aktiverat **two-factor authentication** under [https://github.com/settings/security](https://github.com/settings/security)
-2. Uppdatera din **Billing information** under [https://github.com/settings/billing/payment_information](https://github.com/settings/billing/payment_information)
-3. Uppdatera din **Profile** → Klicka på **ikonen längst upp till höger** → Välj Profile → Klicka på knappen **Edit profile** → Uppdatera ditt **fullständiga namn** → Logga ut och in igen → Ansök på nytt via [https://github.com/settings/education/benefits](https://github.com/settings/education/benefits)
+1. Kontrollera att du har aktiverat **two-factor authentication** under [GitHub Security](https://github.com/settings/security)
+2. Uppdatera din **Billing information** under [GitHub Billing Information](https://github.com/settings/billing/payment_information)
+3. Uppdatera din **Profile** → Klicka på **ikonen längst upp till höger** → Välj Profile → Klicka på knappen **Edit profile** → Uppdatera ditt **fullständiga namn** → Logga ut och in igen → Ansök på nytt via [GitHub Education Benefits](https://github.com/settings/education/benefits)
 4. Upprepa steg 5-16 enligt ovan. **OBS! Ibland funkar det snabbare om man zoomar in på tre detaljer:**
    a) Ditt fullständiga namn
    b) Namn på högskolan/universitetet
-   c) Beskrivning som indikerar distansutbildning.
+   c) Beskrivning som indikerar distansutbildning
+5. **Ibland kan det ta över 5 gånger** innan ansökan går igenom och det beror på att varje gång checkar systemet av ovanstående tre detaljer.
 
 ### Vad ingår?
 | Förmån | Beskrivning |
