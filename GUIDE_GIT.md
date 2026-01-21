@@ -2,11 +2,19 @@
 
 ## Innehåll
 
+- [Om du aldrig använt Git förut](#om-du-aldrig-använt-git-förut)
+  - [Vad är Git?](#vad-är-git)
+  - [Varför använder vi Git i kursen?](#varför-använder-vi-git-i-kursen)
+  - [Vad förväntas du kunna efteråt?](#vad-förväntas-du-kunna-efteråt)
+  - [Vad gör du när?](#vad-gör-du-när)
+- [Kom igång med grupparbete](#kom-igång-med-grupparbete)
 - [Starta ett grupprojekt](#starta-ett-grupprojekt)
-- [Versionshantering med Git](#versionshantering-med-git)
+- [Grundläggande Git](#grundläggande-git)
   - [Stage vs Commit](#stage-vs-commit--vad-är-skillnaden)
-  - [Spara ändringar](#spara-ändringar-commit)
+  - [Spara ändringar (commit)](#spara-ändringar-commit)
+  - [Arbetsflödet i tre steg](#arbetsflödet-i-tre-steg)
   - [Ångra ändringar](#ångra-ändringar)
+  - [Se historik](#se-historik)
 - [Grupparbete med Git](#grupparbete-med-git)
   - [Push och Pull](#push-och-pull--synka-med-github)
   - [Branches](#branches--jobba-utan-att-störa-varandra)
@@ -22,7 +30,7 @@
 
 ### Vad är Git?
 
-Git är ett versionshanteringssystem – tänk det som "spara som" på steroider. Istället för att ha filer som `projekt_v1.php`, `projekt_v2_final.php`, `projekt_v2_final_FINAL.php` håller Git koll på alla ändringar automatiskt. Du kan när som helst gå tillbaka till en tidigare version.
+Git sparar "ögonblicksbilder" av din kod så du kan se historik och ångra ändringar. Istället för att ha filer som `projekt_v1.php`, `projekt_v2_final.php`, `projekt_v2_final_FINAL.php` håller Git koll på alla ändringar automatiskt. Du kan när som helst gå tillbaka till en tidigare version.
 
 ### Varför använder vi Git i kursen?
 
@@ -31,7 +39,7 @@ Git är ett versionshanteringssystem – tänk det som "spara som" på steroider
 - **Historik** – du kan se vem som ändrat vad och när.
 - **Branschstandard** – nästan alla utvecklare använder Git dagligen.
 
-### Vad du förväntas kunna efteråt
+### Vad förväntas du kunna efteråt?
 
 | Grundläggande | Grupparbete |
 |---------------|-------------|
@@ -45,13 +53,14 @@ Git är ett versionshanteringssystem – tänk det som "spara som" på steroider
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │  GÖR EN GÅNG (projektstart)          │  GÖR VARJE ARBETSPASS               │
 │  ─────────────────────────────────   │  ────────────────────────────────   │
-│  □ Skapa repo (en person)            │  □ Pull (hämta senaste)             │
+│  □ Skapa repo (en person)            │  □ Pull (hämta senaste kod)         │
 │  □ Bjud in gruppmedlemmar            │  □ Skapa/byt till din branch        │
-│  □ Acceptera inbjudan                │  □ Jobba och spara ändringar        │
+│  □ Acceptera inbjudan                │  □ Jobba med din kod                │
 │  □ Skapa din första Codespace        │  □ Stage → Commit → Push            │
 │                                      │  □ Skapa PR när du är klar          │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
+
 ## Kom igång med grupparbete
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -141,9 +150,7 @@ När alla har accepterat inbjudan:
 
 ---
 
-## Versionshantering med Git
-
-Git sparar "ögonblicksbilder" av din kod så du kan se historik och ångra ändringar.
+## Grundläggande Git
 
 ### Stage vs Commit – vad är skillnaden?
 
@@ -160,14 +167,12 @@ Tänk dig att du packar en väska för en resa:
 
 1. Klicka på **Source Control**-ikonen i sidofältet (eller `Ctrl+Shift+G`)
 2. Du ser ändrade filer under **Changes**
-3. Klicka på **+** (plus-tecknet) för att stagea filer (välj vilka som ska ingå)
+3. Klicka på **+** (plus-tecknet) för stage av filer (välj vilka som ska ingå)
 4. Filerna flyttas till **Staged Changes**
 5. Skriv ett commit-meddelande – eller klicka på **✨** (AI-ikonen) för att generera ett automatiskt
 6. Klicka på **✓ Commit**
 
-**Tips:** Committa ofta med tydliga meddelanden – det gör det lättare att hitta tillbaka!
-
-### Sammanfattning
+**Tips:** Commit ofta med tydliga meddelanden – det gör det lättare att hitta tillbaka!
 
 ### Arbetsflödet i tre steg
 ```
@@ -189,7 +194,7 @@ Tänk dig att du packar en väska för en resa:
 
 | Situation | Lösning |
 |-----------|---------|
-| **Ångra ändringar i en fil (ej committat)** | Högerklicka på filen → **Discard Changes** |
+| **Ångra ändringar i en fil (ej commit)** | Högerklicka på filen → **Discard Changes** |
 | **Ta bort fil från staged** | Klicka på **−** bredvid filen under Staged Changes |
 | **Ångra senaste commit** | **⋯** → **Commit** → **Undo Last Commit** |
 | **Återställ till tidigare version** | Högerklicka på filen → **Open Timeline** → Välj version |
@@ -216,7 +221,7 @@ När flera personer arbetar i samma projekt behöver ni synkronisera era ändrin
 **Så här gör du:**
 
 1. **Innan du börjar jobba** – klicka på **⋯** → **Pull** (eller `Ctrl+Shift+P` → "Git: Pull")
-2. **När du är klar** – committa först, sedan **⋯** → **Push**
+2. **När du är klar** – commit först, sedan **⋯** → **Push**
 
 **Gyllene regeln:** Pull innan du börjar, push när du är klar!
 
@@ -246,7 +251,7 @@ En branch är en "kopia" där du kan jobba utan att påverka andras kod.
 1. Klicka på branch-namnet längst ner till vänster (t.ex. "main")
 2. Välj **Create new branch...**
 3. Döp den efter det du jobbar med, t.ex. `contact` eller `products`
-4. Jobba och committa som vanligt
+4. Jobba och commit som vanligt
 5. När du är klar – skapa en Pull Request (se nedan)
 
 **Bra branch-namn:**
@@ -346,7 +351,7 @@ så förstår man vad den gör.
 **Lisa fixar det:**
 
 1. Byter namn på filen lokalt i VS Code
-2. Committar: "Döpte om q.php till product-query.php"
+2. Commit: "Döpte om q.php till product-query.php"
 3. Pushar till samma branch
 
 **Erik får notis och:**
@@ -456,7 +461,7 @@ Lisa och Erik har båda ändrat navbaren i `header.php`:
 3. Eller redigera manuellt till rätt version
 4. Ta bort `<<<<<<<`, `=======` och `>>>>>>>` om de finns kvar
 5. Spara filen
-6. Stagea och committa
+6. Stage och commit
 
 **Undvik konflikter:** Prata med gruppen om vem som jobbar med vilken fil!
 
@@ -495,7 +500,7 @@ Lägg aldrig lösenord eller API-nycklar i Git!
 - [ ] Skapa en ny branch för din uppgift
 
 **Varje gång du är klar:**
-- [ ] Committa med tydligt meddelande
+- [ ] Commit med tydligt meddelande
 - [ ] Push till GitHub
 - [ ] Skapa Pull Request
 - [ ] Be någon granska
@@ -513,6 +518,6 @@ Lägg aldrig lösenord eller API-nycklar i Git!
 |---------|---------|
 | Merge-konflikt | Se avsnittet "Merge-konflikter" ovan |
 | Kan inte pusha | Pull först, lösa eventuella konflikter, sedan push |
-| Committade till main av misstag | **⋯** → **Commit** → **Undo Last Commit**, skapa branch, committa igen |
+| Commit till main av misstag | **⋯** → **Commit** → **Undo Last Commit**, skapa branch, commit igen |
 | Ser inte andras ändringar | Pull från main |
 | Fel branch | Klicka på branch-namnet längst ner och byt |
