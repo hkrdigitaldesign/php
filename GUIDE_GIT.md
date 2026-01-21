@@ -21,7 +21,7 @@
   - [Pull Requests](#pull-requests-pr--granska-innan-ni-slår-ihop)
   - [Granska en Pull Request](#granska-en-pull-request)
   - [Merge-konflikter](#merge-konflikter--när-två-ändrar-samma-fil)
-- [Checklista för grupparbete](#checklista-för-grupparbete)
+  - [.gitignore](#gitignore--filer-som-inte-ska-delas)
 - [Problem?](#problem)
 
 ---
@@ -53,11 +53,16 @@ Git sparar "ögonblicksbilder" av din kod så du kan se historik och ångra änd
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │  GÖR EN GÅNG (projektstart)          │  GÖR VARJE ARBETSPASS               │
 │  ─────────────────────────────────   │  ────────────────────────────────   │
-│  □ Skapa repo (en person)            │  □ Pull (hämta senaste kod)         │
+│  □ Skapa repo (en person)            │  □ Byt till main + Pull             │
 │  □ Bjud in gruppmedlemmar            │  □ Skapa/byt till din branch        │
 │  □ Acceptera inbjudan                │  □ Jobba med din kod                │
 │  □ Skapa din första Codespace        │  □ Stage → Commit → Push            │
-│                                      │  □ Skapa PR när du är klar          │
+│                                      │  □ Skapa PR + be någon granska      │
+│  KOMMUNIKATION                       │                                     │
+│  ─────────────────────────────────   │                                     │
+│  □ Bestäm vem som gör vad            │                                     │
+│  □ Säg till innan du börjar på en fil│                                     │
+│  □ Granska varandras Pull Requests   │                                     │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -489,26 +494,6 @@ config.local.php
 ```
 
 Lägg aldrig lösenord eller API-nycklar i Git!
-
----
-
-### Checklista för grupparbete
-
-**Varje gång du börjar jobba:**
-- [ ] Byt till `main` branch
-- [ ] Pull senaste ändringarna
-- [ ] Skapa en ny branch för din uppgift
-
-**Varje gång du är klar:**
-- [ ] Commit med tydligt meddelande
-- [ ] Push till GitHub
-- [ ] Skapa Pull Request
-- [ ] Be någon granska
-
-**Kommunikation:**
-- [ ] Bestäm vem som gör vad
-- [ ] Säg till i gruppen innan du börjar på en fil
-- [ ] Granska varandras Pull Requests
 
 ---
 
