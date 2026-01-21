@@ -51,18 +51,18 @@ Git sparar "ögonblicksbilder" av din kod så du kan se historik och ångra änd
 ### Vad gör du när?
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│  GÖR EN GÅNG (projektstart)          │  GÖR VARJE ARBETSPASS               │
-│  ─────────────────────────────────   │  ────────────────────────────────   │
-│  □ Skapa repo (en person)            │  □ Byt till main + Pull             │
-│  □ Bjud in gruppmedlemmar            │  □ Skapa/byt till din branch        │
-│  □ Acceptera inbjudan                │  □ Jobba med din kod                │
-│  □ Skapa din första Codespace        │  □ Stage → Commit → Push            │
-│                                      │  □ Skapa PR + be någon granska      │
-│  KOMMUNIKATION                       │                                     │
-│  ─────────────────────────────────   │                                     │
-│  □ Bestäm vem som gör vad            │                                     │
-│  □ Säg till innan du börjar på en fil│                                     │
-│  □ Granska varandras Pull Requests   │                                     │
+│  GÖR EN GÅNG (projektstart)           │  GÖR VARJE ARBETSPASS               │
+│  ──────────────────────────────────   │  ────────────────────────────────   │
+│  □ Skapa repo (en person)             │  □ Byt till main + Pull             │
+│  □ Bjud in gruppmedlemmar             │  □ Skapa/byt till din branch        │
+│  □ Acceptera inbjudan                 │  □ Jobba med din kod                │
+│  □ Skapa din första Codespace         │  □ Stage → Commit → Push            │
+│                                       │  □ Skapa PR + be någon granska      │
+│  KOMMUNIKATION                        │                                     │
+│  ──────────────────────────────────   │                                     │
+│  □ Bestäm vem som gör vad             │                                     │
+│  □ Säg till innan du börjar på en fil │                                     │
+│  □ Granska varandras Pull Requests    │                                     │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
