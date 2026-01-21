@@ -18,6 +18,41 @@
 
 ---
 
+## Om du har aldrig använt Git förut
+
+### Vad är Git?
+
+Git är ett versionshanteringssystem – tänk det som "spara som" på steroider. Istället för att ha filer som `projekt_v1.php`, `projekt_v2_final.php`, `projekt_v2_final_FINAL.php` håller Git koll på alla ändringar automatiskt. Du kan när som helst gå tillbaka till en tidigare version.
+
+### Varför använder vi Git i kursen?
+
+- **Säkerhetskopiering** – din kod finns både lokalt och på GitHub.
+- **Samarbete** – flera personer kan jobba i samma projekt utan att skriva över varandras kod.
+- **Historik** – du kan se vem som ändrat vad och när.
+- **Branschstandard** – nästan alla utvecklare använder Git dagligen.
+
+### Vad du förväntas kunna efteråt
+
+| Grundläggande | Grupparbete |
+|---------------|-------------|
+| Förstå vad stage och commit betyder | Skapa och byta mellan branches |
+| Spara ändringar med tydliga meddelanden | Synka med GitHub (pull/push) |
+| Ångra ändringar | Skapa och granska Pull Requests |
+| | Lösa enkla merge-konflikter |
+
+### Vad gör du när?
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  GÖR EN GÅNG (projektstart)          │  GÖR VARJE ARBETSPASS               │
+│  ─────────────────────────────────   │  ────────────────────────────────   │
+│  □ Skapa repo (en person)            │  □ Pull (hämta senaste)             │
+│  □ Bjud in gruppmedlemmar            │  □ Skapa/byt till din branch        │
+│  □ Acceptera inbjudan                │  □ Jobba och spara ändringar        │
+│  □ Skapa din första Codespace        │  □ Stage → Commit → Push            │
+│                                      │  □ Skapa PR när du är klar          │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+## Kom igång med grupparbete
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                        GIT GRUPPARBETE – ÖVERSIKT                           │
@@ -134,18 +169,21 @@ Tänk dig att du packar en väska för en resa:
 
 ### Sammanfattning
 
+### Arbetsflödet i tre steg
 ```
-Ändrade filer       Förberedda        Sparade lokalt    Delat med gruppen
-      │                 │                  │                   │
-      ▼                 ▼                  ▼                   ▼
-┌────────────┐    ┌────────────┐     ┌────────────┐     ┌────────────┐
-│ Din branch │    │  Stagade   │     │   Lokalt   │     │   GitHub   │
-│(ändringar) │───►│ ändringar  │────►│    repo    │◄───►│  (Remote)  │
-└────────────┘    └────────────┘     └────────────┘     └────────────┘
-           1. Klicka +       2. ✓ Commit           3. Sync
-                          (eller ✨ för AI-     (Push + Pull)
-                        genererat meddelande)
+    1. STAGE              2. COMMIT                  3. PUSH
+  (välj filer)          (spara lokalt)          (dela med gruppen)
+       │                      │                         │
+       ▼                      ▼                         ▼
+┌─────────────┐        ┌───────────────┐         ┌─────────────┐
+│  Klicka +   │───────►│ Skriv medde-  │────────►│ Klicka Sync │
+│  på filer   │        │ lande (eller  │         │ eller Push  │
+│             │        │ ✨ för AI)    │         │             │
+└─────────────┘        │ sedan ✓       │         └─────────────┘
+                       └───────────────┘
 ```
+
+**Kom ihåg:** Stage → Commit → Push. Alltid i den ordningen.
 
 ### Ångra ändringar
 
