@@ -122,7 +122,7 @@ One person in the group creates the project:
 1. Go to the template repo [here](https://github.com/hkrdigitaldesign/php) (Skip this step if you are not working with PHP/MySQL, instead create a new repository)
 2. Click **"Use this template"** → **"Create a new repository"**
 3. Choose a name, e.g., `group1-design-project`
-4. Select **Private** (if you don't want others to see it)
+4. Select **Private** (if you do not want others to see it)
 5. Click **Create repository**
 
 ### Step 2: Invite group members
@@ -147,11 +147,11 @@ Once everyone has accepted the invitation:
 3. Click **"Create codespace on main"**
 4. Wait while the environment builds (about 1-2 minutes)
 
-**Important:** Each person has their own Codespace – you don't work in the same window, but sync via Git!
+**Important:** Each person has their own Codespace – you do not work in the same window, but sync via Git!
 
 **Next time you want to work:**
 1. Go to [github.com/codespaces](https://github.com/codespaces)
-2. Click on your existing Codespace (don't create a new one each time!)
+2. Click on your existing Codespace (do not create a new one each time!)
 
 ---
 
@@ -308,7 +308,7 @@ A Pull Request (PR) lets the group review your code before it is merged into mai
 
 ### Reviewing a Pull Request
 
-Anyone in the group can review – it doesn't have to be the same person every time. The only rule is that you don't review your own code.
+Anyone in the group can review – it does not have to be the same person every time. The only rule is that you do not review your own code.
 
 **How to review:**
 
@@ -422,7 +422,7 @@ so it is clear what it does.
 
 ### Merge conflicts – when two people change the same file
 
-A conflict occurs when two people have changed the same line. Git doesn't know which version should apply.
+A conflict occurs when two people have changed the same line. Git does not know which version should apply.
 
 **What a conflict looks like:**
 
@@ -468,9 +468,9 @@ Lisa and Erik have both changed the navbar in `header.php`:
 
 ---
 
-### .gitignore – files that shouldn't be shared
+### .gitignore – files that should not be shared
 
-Some files shouldn't be uploaded to GitHub. Create a file called `.gitignore` in the root folder (if it doesn't already exist):
+Some files should not be uploaded to GitHub. Create a file called `.gitignore` in the root folder (if it does not already exist):
 ```
 # System files
 .DS_Store
@@ -498,7 +498,7 @@ Never put passwords or API keys in Git!
 | Problem | Solution |
 |---------|----------|
 | Merge conflict | See the "Merge conflicts" section above |
-| Can't push | Pull first, resolve any conflicts, then push |
+| Can not push | Pull first, resolve any conflicts, then push |
 | Accidentally committed to main | **⋯** → **Commit** → **Undo Last Commit**, create branch, commit again |
-| Can't see others' changes | Pull from main |
+| Can not see others' changes | Pull from main |
 | Wrong branch | Click the branch name at the bottom and switch |
