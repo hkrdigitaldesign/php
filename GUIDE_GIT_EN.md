@@ -339,7 +339,7 @@ Anyone in the group can review – it doesn't have to be the same person every t
 ```
 Could you rename this file to something more descriptive?
 For example, `search-query.php` or `product-query.php`
-so it's clear what it does.
+so it is clear what it does.
 ```
 
 4. Click **Start a review**
