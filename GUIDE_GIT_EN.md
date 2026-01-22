@@ -71,14 +71,14 @@ Git saves "snapshots" of your code so you can view history and undo changes. Ins
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                         GIT GROUP WORK – OVERVIEW                           │
 │                                                                             │
-│    1. ONE person creates the repo and invites the others as collaborators   │
-│    2. Everyone does PULL from main to get the latest version                │
-│    3. Each person creates their own BRANCH for their task                   │
-│    4. When finished: PUSH + create PULL REQUEST                             │
-│    5. A group member REVIEWS your code                                      │
-│    6. After approval: MERGE to main                                         │
+│  1. ONE person creates the repo and invites the others as collaborators     │
+│  2. Everyone does PULL from main to get the latest version                  │
+│  3. Each person creates their own BRANCH for their task                     │
+│  4. When finished: PUSH + create PULL REQUEST                               │
+│  5. A group member REVIEWS your code                                        │
+│  6. After approval: MERGE to main                                           │
 │                                                                             │
-│     Golden rule: Never work directly in main – always create a branch!      │
+│  Golden rule: Never work directly in main – always create a branch!         │
 └─────────────────────────────────────────────────────────────────────────────┘
 
                             ┌──────────────────┐
