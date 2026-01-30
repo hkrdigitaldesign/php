@@ -9,17 +9,10 @@
 # Detta ger oss PHP förinstallerat med vanliga verktyg
 FROM mcr.microsoft.com/devcontainers/php:8.3
 
-# Installerar Node.js version 20 (LTS = Long Term Support)
-# Node.js behövs om du vill använda npm-paket eller bygga frontend
-# curl hämtar installationsskriptet, bash kör det, sedan installeras nodejs
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
-    apt-get install -y nodejs
-
 # Installerar PHP-tillägg för MySQL-databasanslutning
 # pdo_mysql = Modern säker metod för databasanrop
 # mysqli = Äldre metod, fortfarande vanlig i tutorials
 RUN docker-php-ext-install pdo_mysql mysqli
 
-# Verifierar att Node.js och npm installerades korrekt
-# Detta skriver ut versionsnummer i loggfilen
-RUN node --version && npm --version
+# Node.js installeras via devcontainer features i devcontainer.json
+# Detta ger en mer stabil installation utan GPG-nyckelproblem

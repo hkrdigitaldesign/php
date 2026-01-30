@@ -13,6 +13,12 @@
   "service": "app",
   // Mappen där din kod finns i containern
   "workspaceFolder": "/workspace",
+  // Installerar Node.js via devcontainer features (mer stabilt än manuell installation)
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
   // VS Code-specifika inställningar
   "customizations": {
     "vscode": {
