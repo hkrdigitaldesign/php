@@ -7,7 +7,7 @@
 
 # Basimage: Startar från Microsofts färdiga PHP 8.3-miljö för VS Code
 # Detta ger oss PHP förinstallerat med vanliga verktyg
-FROM mcr.microsoft.com/devcontainers/php:8.3
+FROM mcr.microsoft.com/devcontainers/php:1-8.3
 
 # Installerar PHP-tillägg för MySQL-databasanslutning
 # pdo_mysql = Modern säker metod för databasanrop
