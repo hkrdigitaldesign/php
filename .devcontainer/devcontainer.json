@@ -41,10 +41,14 @@
   // Etiketter för portarna (visas i PORTS-fliken)
   "portsAttributes": {
     "3000": {
-      "label": "PHP App" // Din webbplats
+      "label": "PHP App", // Din webbplats
+      "visibility": "public",
+      "onAutoForward": "openBrowser"
     },
     "8080": {
-      "label": "phpMyAdmin" // Databasverktyg
+      "label": "phpMyAdmin", // Databasverktyg
+      "visibility": "public",
+      "onAutoForward": "notify"
     }
   }
 }

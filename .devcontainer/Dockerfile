@@ -9,6 +9,22 @@
 # Detta ger oss PHP förinstallerat med vanliga verktyg
 FROM mcr.microsoft.com/devcontainers/php:1-8.3
 
+# Ta bort problematisk Yarn-repository för att undvika GPG-nyckelfel
+RUN rm -f /etc/apt/sources.list.d/yarn.list
+
+# Installerar systembibliotek som behövs för bildbehandling (GD-tillägget)
+RUN apt-get update && apt-get install -y \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libwebp-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Konfigurerar och installerar GD-tillägget för bildbehandling
+# GD används för att beskära, ändra storlek och manipulera bilder
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
+    && docker-php-ext-install gd
+
 # Installerar PHP-tillägg för MySQL-databasanslutning
 # pdo_mysql = Modern säker metod för databasanrop
 # mysqli = Äldre metod, fortfarande vanlig i tutorials
